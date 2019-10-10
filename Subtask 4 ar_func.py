@@ -55,7 +55,7 @@ for idx, row in POSTS.iterrows():
 print('done!')
 
 def post(p_id):
-    """ hacky little function to get an article title from the title field,
+    """ Function to get an article title from the title field,
     given a post ID """
     return POSTS[POSTS['post_id'] == p_id]['title'].tolist()[0].split(' - ')[0]
 
@@ -68,7 +68,7 @@ def recommend(post_id, num):
     for rec in recs:
         print("Recommended: " + post(rec[1]) + " (score:" + str(rec[0]) + ")")
 
-# Just plug in any post id here (1-500), and the number of recommendations you want (1-99)
+# Just plug in any post id here (we have about 800 posts in the dataset), and the number of recommendations you want (1-99)
 # You can get a list of valid post IDs by evaluating the variable 'POSTS'
 
 recommend(post_id=33, num=5)
