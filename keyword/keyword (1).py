@@ -16,7 +16,7 @@ nltk.download('punkt')
 #A new article from anywhere 
 URL = "https://lucid.blog/mercyinyang/post/flutterwave-africas-largest-online-payment-gateway-be0"
 
-#For different language newspaper refer above table 
+#To set language to English
 ARTICLE = Article(URL, language="en") # en for English 
 
 #To download the article 
