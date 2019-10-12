@@ -16,4 +16,4 @@ def keywords(title):
     return " ".join(tfidf.get_feature_names())
 
 # call function
-print(keywords("Learning Web development at StartNg"))
+print(keywords("at a"))
