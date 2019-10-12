@@ -58,6 +58,7 @@ def post(p_id):
     """ Function to get an article title from the title field,
     given a post ID 
     Args: The post id
+    Arg type: Integer
     Returns: A particular post title with id = post_id"""
     return POSTS[POSTS['post_id'] == p_id]['title'].tolist()[0].split(' - ')[0]
 
@@ -65,6 +66,7 @@ def post(p_id):
 def recommend(post_id, num):
     """ Function to reads the results out of the dictionary.
     Args: post id and number of recommendations required
+    Arg type: Integer, Integer
     Returns: Dictionary of similar titles and score"""
     print("Recommending " + str(num) + " articles similar to " + post(post_id) + "...")
     print("--------------------------------------------------------------------------")
